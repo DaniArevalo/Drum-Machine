@@ -38,7 +38,7 @@ function App() {
     return () => {
       document.removeEventListener('keydown', handleKeyPress);
     };
-  }, []);
+  }, [handleKeyPress]); // Agregamos handleKeyPress como dependencia
 
   return (
     <div id="drum-machine">
@@ -71,3 +71,4 @@ function App() {
 }
 
 export default App;
+
